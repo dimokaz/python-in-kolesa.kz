@@ -15,7 +15,7 @@ text = input('Введите предложение с ругоательств�
 print('Вводные данные: ',text)
 
 text = text.lower().split(' ')
-result=[]
+result = []
 
 for i in text:
     if i in mat:
