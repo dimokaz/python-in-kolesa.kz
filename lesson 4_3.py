@@ -10,6 +10,7 @@ def prime_num_seq(num):
     X = list(range(num))
     first = 2
     not_prime_list = []
+    
     for j in range(len(X)):
         for i in range(len(X)):# находим не простые числа
             if X[i] % first == 0 and X[i] != first:
@@ -22,7 +23,8 @@ def prime_num_seq(num):
         if max(X) == first: # останавливаем цикл на последнем простом числе
             break
 
-        first = X[X.index(first) + 1]
+        first = X[X.index(first) + 1]#берем следующее число для поиска не простых чисел
+        
     print(X)
 
 prime_num_seq(100)
